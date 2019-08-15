@@ -69,7 +69,7 @@
                 href="./index.html">
                 <img src="<?php echo base_url(); ?>assets/apps/InfestPromote/ic/lg.svg"
                     class="navbar-brand-img"
-                    alt="..."> INF-V1
+                    alt="..."> INF-V2
             </a>
           
             <!-- Collapse -->
