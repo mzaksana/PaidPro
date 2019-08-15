@@ -1,0 +1,22 @@
+html,body{
+    width: 100% !important;
+    height: 100% !important;
+}
+a { color: inherit; } 
+
+.main-content{
+    top: 150px !important;
+}
+
+
+.button-app-container{
+    padding: 0 !important;
+}
+.button-app{
+    margin: 0 !important;
+}
+
+.list-tag{
+
+    margin: 0 0 10px 10px !important;
+}
