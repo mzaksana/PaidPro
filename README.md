@@ -1,3 +1,3 @@
 # Infest Paid Promote
 
-app for monitoring 
+app for monitoring instagram
