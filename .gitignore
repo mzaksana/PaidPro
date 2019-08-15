@@ -3,3 +3,4 @@
 application/modules/InfestPromote/caches/
 application/modules/InfestPromote/data/
 .idea/*
+vendor/*
