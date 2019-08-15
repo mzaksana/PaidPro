@@ -1,5 +1,6 @@
 **/assets/theme/*
 **/db/*
 application/modules/InfestPromote/caches/
-
 application/modules/InfestPromote/data/
+
+.idea/*
