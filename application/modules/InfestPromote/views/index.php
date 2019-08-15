@@ -40,7 +40,7 @@
     <!-- CSS Files -->
     <link href="<?php echo base_url(); ?>assets/theme/vendor/argon/assets/css/argon-dashboard.css?v=1.1.0"
         rel="stylesheet" />
-    <link href="<?php echo base_url(); ?>application/modules/InfestPromote/assets/style/app.css" rel="stylesheet" />
+    <link href="<?php echo base_url(); ?>assets/apps/InfestPromote/style/app.css" rel="stylesheet" />
     
     <script>
         var BASE_URL = '<?php echo base_url(); ?>index.php/';
@@ -68,11 +68,11 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!-- Brand -->
-            <a class="navbar-brand pt-0"
+            <a class="navbar-brand pt-0 font-brand"
                 href="./index.html">
-                <img src="<?php echo base_url(); ?>assets/theme/vendor/argon/assets/img/brand/blue.png"
+                <img src="<?php echo base_url(); ?>assets/apps/InfestPromote/ic/lg.svg"
                     class="navbar-brand-img"
-                    alt="...">
+                    alt="..."> INF-V1
             </a>
           
             <!-- Collapse -->
@@ -83,7 +83,7 @@
                     <div class="row">
                         <div class="col-6 collapse-brand">
                             <a href="./index.html">
-                                <img src="<?php echo base_url(); ?>assets/theme/vendor/argon/assets/img/brand/blue.png">
+                                <img src="<?php echo base_url(); ?>assets/apps/InfestPromote/ic/lg.svg">
                             </a>
                         </div>
                         <div class="col-6 collapse-close">
@@ -206,11 +206,7 @@
     <script src="<?php echo base_url(); ?>assets/theme/vendor/argon/assets/js/plugins/jquery/dist/jquery.min.js"></script>
     <script src="<?php echo base_url(); ?>assets/theme/vendor/argon/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   
-    <script type="text/javascript">
-    <?php
-        include APPPATH . "modules/InfestPromote/assets/js/app.js";
-    ?>
-    </script>
+    <script src="<?php echo base_url(); ?>assets/apps/InfestPromote/js/app.js" type="text/javascript"></script>
 
 </body>
 
