@@ -6,6 +6,7 @@ a { color: inherit; }
 
 .main-content{
     top: 150px !important;
+    padding-bottom: 50px;
 }
 
 
