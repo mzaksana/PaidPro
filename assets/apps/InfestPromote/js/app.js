@@ -12,7 +12,7 @@ function init(params) {
 
 function search() {
     let qy = document.getElementById("search-in").value;
-    const result = getData(qy, MODULE_URL, function (data) {
+    const result = getData(qy, BASE_PATH+"core", function (data) {
         console.log('wait ', data);
     });
 

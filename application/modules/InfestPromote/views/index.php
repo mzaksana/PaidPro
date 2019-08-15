@@ -44,13 +44,10 @@
     
     <script>
         var BASE_URL = '<?php echo base_url(); ?>index.php/';
+        var BASE_PATH = '<?php echo base_url(); ?>';
         var MODULE_URL = '<?php echo base_url();?>application/modules/InfestPromote';
     </script>
-    <script type="text/javascript">
-    <?php
-        include APPPATH . "modules/InfestPromote/core/js/api.js";
-    ?>
-    </script>
+    <script src='<?php echo base_url();?>core/InfestPromote/js/api.js' type="text/javascript"></script>
 </head>
 
 <body class="">
