@@ -30,7 +30,7 @@ if (!isset($_GET['hashtag'])) {
 }
 $hashtag = $_GET['hashtag'];
 
-$monlist = loadMonitorList("bv_monitorlist.txt");
+$monlist = loadMonitorList("../bv_monitorlist.txt");
 $posts = fetchHastagPostList($hashtag);
 $monstatus = compareMonitorStatus($monlist, $posts);
 //var_dump($monstatus);
