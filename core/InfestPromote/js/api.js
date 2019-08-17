@@ -1,15 +1,16 @@
-function getData(x,uri,cb) {
-    var hashtag = x;
-    console.log('hashtag :', hashtag);
-    console.log('uri :', uri);
-    if (!(hashtag == "")) {
+function getData(hashtag,uri,list) {
+    let data = {'data':list};
+
+    if (!(hashtag === "")) {
         $('#main-list-panel').hide();
         $('#loading-list-panel').show();
-        var jqXHR=$.ajax({
-            url: uri+'/InfestPromote/php/bvfetchjson.php?hashtag=' + hashtag,
+        const jqXHR = $.ajax({
+            url: uri + '/InfestPromote/php/bvfetchjson.php?hashtag=' + hashtag,
             async: false,
+            type: "POST",
+            data:data,
+            dataType: "json"
         });
         return jqXHR.responseText;
-
     }
 }
