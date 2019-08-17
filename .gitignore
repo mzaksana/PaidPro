@@ -4,3 +4,8 @@ application/modules/InfestPromote/caches/
 application/modules/InfestPromote/data/
 .idea/*
 vendor/*
+composer\.json
+
+composer\.lock
+
+core/InfestPromote/databases/
