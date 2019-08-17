@@ -1,4 +1,6 @@
 <?php
+use SleekDB\SleekDB;
+
 
 /**
  * PaidPromote Hastag Monitoring (Codename Boov)
@@ -58,22 +60,27 @@ function fetchHastagPostList($hashtag)
 	}
 }
 
-function loadMonitorList($monlistfile)
+function loadMonitorList($monlistdata)
 {
-	$fh = fopen($monlistfile, "r");
-	if ($fh) {
-		while (($line = fgets($fh)) !== false) {
-			$spl = explode(":", trim($line));
-			$user_node[] = array(
-				'username' => $spl[0],
-				'id' => $spl[1]
-			);
+	require_once "../db/SleekDB.php";
+	$dataDir = "../databases";
+	$user_node = array();
+	foreach ($monlistdata as $line){
+		try {
+			$db = SleekDB::store("target", $dataDir);
+			try {
+				$results = $db->where("_id","=",$line)->fetch();
+				foreach ($results[0]["data"] as $row){
+					array_push($user_node, array('username' => $row['username'], 'id' => $row['uid']));
+				}
+			} catch (Exception $e) {
+				continue;
+			}
+		} catch (Exception $e) {
+			continue;
 		}
-		fclose($fh);
-		return $user_node;
-	} else {
-		return NULL;
 	}
+	return $user_node;
 }
 
 function compareMonitorStatus($monlist, $posts, &$postedcnt)
