@@ -91,7 +91,7 @@ function createTbody(monitorStatus) {
 
             list += "<td>" + '<div class="d-flex align-items-center">' + postTime + '</div>' + "</td>";
             list += '<td><div class="d-flex align-items-center">';
-            list += '<a href=\"https://www.instagram.com/p/"' + shortcode + "/\" target=\"_blank\">https://www.instagram.com/p/" + shortcode + "/</div></td>";
+            list += '<a href=\"https://www.instagram.com/p/' + shortcode + '" target=\"_blank\">https://www.instagram.com/p/' + shortcode + '</div></td>';
         } else {
             list += '<td><span class="badge badge-dot mr-4">';
             list += '<i class="bg-warning"></i> pending</span></td>';
