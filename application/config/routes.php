@@ -51,6 +51,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
  */
 
 // $route['default_controller'] = 'dashboard';
-$route['default_controller'] = 'Mza';
+$route['default_controller'] = 'InfestPromote';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = false;
